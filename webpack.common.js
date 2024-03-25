@@ -33,7 +33,7 @@ module.exports = {
           presents: [
             '@babel/preset-env',
             '@babel/react',{
-              'plugins':['@babel/plugin-proposal-class-properties']
+              'plugins':['@babel/plugin-syntax-jsx']
             }
           ]
         }
