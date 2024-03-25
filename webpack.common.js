@@ -29,7 +29,14 @@ module.exports = {
         loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
-        options: {cacheDirectory: true}
+        options: {cacheDirectory: true,
+          presents: [
+            '@babel/preset-env',
+            '@babel/react',{
+              'plugins':['@babel/plugin-proposal-class-properties']
+            }
+          ]
+        }
       },
       {
         test: /\.(sa|sc|c)ss$/,
